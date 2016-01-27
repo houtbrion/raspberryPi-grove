@@ -5,10 +5,48 @@ seeed studio grove module software for raspberry pi
 * seeed studioのwikiに公開されている各種サンプルプログラムをgitでまとめて管理できるようにする．
 * 1つのgroveモジュールに対して，1つのプログラムが対応するように整理し直す． (一部のサンプルプログラムは複数のモジュールに依存しているため)
 
+Seeed Studioの公式のWikiにはサポートされているモジュールは以下のものだけとある．
+
+* Grove - Button
+* Light Sensor
+* Buzzer
+* Sound Sensor
+* Grove - Red LED
+* Grove - Blue LED
+* Grove - Green LED
+* LCD RGB Backlight
+* Rotary Angle Sensor
+* Temperature Humidity Sensor
+* Ultrasonic Ranger Sensor
+* Relay
+
 
 ## 音関係
 
 ## 位置や動作関係
+
+### Grove - Button
+* [製品情報](http://www.seeedstudio.com/depot/grove-button-p-766.html?cPath=156_160 "製品情報")
+* [技術情報](http://www.seeedstudio.com/wiki/Grove_-_Button "技術情報")
+
+Wikiのサンプルプログラムの説明では，「デジタル13番ピンにLEDを挿して動作確認せよ」と書いてあるが，
+デジタル13番ピンには基板上にLEDが付いているため，シールドの下に隠れていることを除けば
+特にLEDを新たに接続する必要はない．
+
+テスト的に実行した際には，LEDは接続せず，groveシールドの下に隠れているLEDが点滅するようすを
+確認した．
+
+
+使用した
+[サンプルプログラム](
+https://github.com/houtbrion/raspberryPi-grove/blob/master/Button/Button.py
+"サンプルプログラム") 
+は本プロジェクトの「
+button
+/
+button
+.py」．
+
 
 ## ユーザインタフェース
 
@@ -100,23 +138,6 @@ Speaker.ino
 出すプログラムとなっている．
 
 ## 位置や動作関係
-
-### Grove - Button
-* [製品情報](http://www.seeedstudio.com/depot/grove-button-p-766.html?cPath=156_160 "製品情報")
-* [技術情報](http://www.seeedstudio.com/wiki/Grove_-_Button "技術情報")
-
-Wikiのサンプルプログラムの説明では，「デジタル13番ピンにLEDを挿して動作確認せよ」と書いてあるが，
-デジタル13番ピンには基板上にLEDが付いているため，シールドの下に隠れていることを除けば
-特にLEDを新たに接続する必要はない．
-
-テスト的に実行した際には，LEDは接続せず，groveシールドの下に隠れているLEDが点滅するようすを
-確認した．
-
-
-使用した
-[サンプルプログラム](https://github.com/houtbrion/arduino-grove/blob/master/button/button.ino "サンプルプログラム") 
-は本プロジェクトの「button/button.ino」．
-
 
 ### Grove - Touch Sensor
 * [製品情報](http://www.seeedstudio.com/depot/grove-touch-sensor-p-747.html?cPath=156_160 "製品情報")
