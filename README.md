@@ -29,6 +29,24 @@ Raspberry Pi用のサンプルプログラムが収録されているものが
 あるため，それらについても，サンプルプログラムで
 動作確認を行った．
 
+ただし，動作確認を行ったのは手持ちのモジュールのみ．
+
+## 準備
+[
+公式バイナリ
+](
+https://github.com/DexterInd/GrovePi
+"
+公式バイナリ
+")の
+「Firmware/firmware\_update.sh」を用いて，GrovePi+のボードのファームウェアを
+アップデートする必要がある．これを行わない状態では，以下のモジュールの
+サンプルプログラムは動作しなかった．
+
+* LEDバー
+* RGB LED
+* 7セグメント4桁ディスプレイ
+
 ## 音関係
 
 ### Grove - Buzzer
@@ -320,6 +338,70 @@ LCD\_RGB\_BackLight
 /
 LCD\_RGB\_BackLight
 .py」にも収録．
+
+### LEDバー
+* [製品情報](http://www.seeedstudio.com/depot/Grove-LED-Bar-p-1178.html "製品情報")
+* [技術情報](http://www.seeedstudio.com/wiki/Grove_-_LED_Bar "技術情報")
+
+使用した
+[サンプルプログラム](
+https://github.com/houtbrion/raspberryPi-grove/blob/master/
+LED_Bar
+/
+LED_Bar
+.py
+"サンプルプログラム")は本プロジェクトの「
+LED\_Bar
+/
+LED\_Bar
+.py
+」にも収録．
+
+Arduino+Arduino用サンプルプログラムでは動作するが，Raspberry Pi用
+サンプルプログラムは動作しなかった(「まったく光らない」)．
+
+### RGB LED
+* [製品情報](http://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html "製品情報")
+* [技術情報](http://www.seeedstudio.com/wiki/index.php?title=Twig_-_Chainable_RGB_LED "技術情報")
+
+使用した
+[サンプルプログラム](
+https://github.com/houtbrion/raspberryPi-grove/blob/master/
+RGB_LED
+/
+RGB_LED
+.py
+"サンプルプログラム")は本プロジェクトの「
+RGB\_LED
+/
+RGB\_LED
+.py
+」にも収録．
+
+公式Wikiのサンプルプログラムでは，実行時に文法エラーとなるため，本プロジェクトで
+収録したサンプルプログラムでは，
+その部分は修正済み．しかし，修正しても動作しない．同じモジュールを
+Arduinoに繋いで，Arduino用のサンプルプログラムで動作させると動作する．
+
+### 7セグメント4桁ディスプレイ
+* [製品情報](http://www.seeedstudio.com/depot/Grove-4Digit-Display-p-1198.html "製品情報")
+* [技術情報](http://www.seeedstudio.com/wiki/Grove_-_4-Digit_Display "技術情報")
+
+使用した
+[サンプルプログラム](
+https://github.com/houtbrion/raspberryPi-grove/blob/master/
+4_Digit_Display
+/
+4_Digit_Display
+.py
+"サンプルプログラム")は本プロジェクトの「
+4\_Digit\_Display
+/
+4\_Digit\_Display
+.py
+」にも収録．
+
+このモジュールもArduinoでは動作したが，Raspberry Piでは動作しなかった．
 
 
 ## 環境関係
@@ -749,70 +831,6 @@ GPS
 ## ユーザインタフェース
 
 ## 表示関係
-
-### LEDバー
-* [製品情報](http://www.seeedstudio.com/depot/Grove-LED-Bar-p-1178.html "製品情報")
-* [技術情報](http://www.seeedstudio.com/wiki/Grove_-_LED_Bar "技術情報")
-
-使用した
-[サンプルプログラム](
-https://github.com/houtbrion/raspberryPi-grove/blob/master/
-LED_Bar
-/
-LED_Bar
-.py
-"サンプルプログラム")は本プロジェクトの「
-LED\_Bar
-/
-LED\_Bar
-.py
-」にも収録．
-
-Arduino+Arduino用サンプルプログラムでは動作するが，Raspberry Pi用
-サンプルプログラムは動作しなかった(「まったく光らない」)．
-
-### RGB LED
-* [製品情報](http://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html "製品情報")
-* [技術情報](http://www.seeedstudio.com/wiki/index.php?title=Twig_-_Chainable_RGB_LED "技術情報")
-
-使用した
-[サンプルプログラム](
-https://github.com/houtbrion/raspberryPi-grove/blob/master/
-RGB_LED
-/
-RGB_LED
-.py
-"サンプルプログラム")は本プロジェクトの「
-RGB\_LED
-/
-RGB\_LED
-.py
-」にも収録．
-
-公式Wikiのサンプルプログラムでは，実行時に文法エラーとなるため，本プロジェクトで
-収録したサンプルプログラムでは，
-その部分は修正済み．しかし，修正しても動作しない．同じモジュールを
-Arduinoに繋いで，Arduino用のサンプルプログラムで動作させると動作する．
-
-### 7セグメント4桁ディスプレイ
-* [製品情報](http://www.seeedstudio.com/depot/Grove-4Digit-Display-p-1198.html "製品情報")
-* [技術情報](http://www.seeedstudio.com/wiki/Grove_-_4-Digit_Display "技術情報")
-
-使用した
-[サンプルプログラム](
-https://github.com/houtbrion/raspberryPi-grove/blob/master/
-4_Digit_Display
-/
-4_Digit_Display
-.py
-"サンプルプログラム")は本プロジェクトの「
-4\_Digit\_Display
-/
-4\_Digit\_Display
-.py
-」にも収録．
-
-このモジュールもArduinoでは動作したが，Raspberry Piでは動作しなかった．
 
 
 ## 環境関係
