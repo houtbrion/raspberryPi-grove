@@ -775,7 +775,8 @@ Electricity\_Sensor
 このモジュールは単純な機械式スイッチのため，プログラムなどには関係がない．
 
 ### 赤外線送受信機
-####受信機
+
+#### 受信機
 * [製品情報](http://www.seeedstudio.com/depot/Grove-Infrared-Receiver-p-994.html"製品情報")
 * [技術情報](http://www.seeedstudio.com/wiki/Grove_-_Infrared_Receiver "技術情報")
 
